@@ -1,6 +1,6 @@
 #include"./tcp_server.h"
-#include"/home/zxl/rocket/rocket/common/log.h"
-#include"/home/zxl/rocket/rocket/net/eventloop.h"
+#include"../common/log.h"
+#include"../net/eventloop.h"
 #include"./tcp_connection.h"
 
 namespace rocket{

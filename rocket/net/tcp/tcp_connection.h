@@ -7,9 +7,9 @@
 #include<memory>
 #include<map>
 #include<vector>
-#include"/home/zxl/rocket/rocket/net/io_thread.h"
-#include"/home/zxl/rocket/rocket/net/coder/abstract_coder.h"
-#include"/home/zxl/rocket/rocket/net/rpc/rpc_dispatcher.h"
+#include"../net/io_thread.h"
+#include"../net/coder/abstract_coder.h"
+#include"../net/rpc/rpc_dispatcher.h"
 
 namespace rocket{
       enum TcpState{

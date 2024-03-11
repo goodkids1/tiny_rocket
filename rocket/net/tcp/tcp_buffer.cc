@@ -1,5 +1,5 @@
 #include"./tcp_buffer.h"
-#include"/home/zxl/rocket/rocket/common/log.h"
+#include"../common/log.h"
 #include<memory>
 #include<string.h>
 

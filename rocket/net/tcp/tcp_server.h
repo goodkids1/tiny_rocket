@@ -4,8 +4,8 @@
 #include"./net_addr.h"
 #include<set>
 #include"./tcp_connection.h"
-#include"/home/zxl/rocket/rocket/net/eventloop.h"
-#include"/home/zxl/rocket/rocket/net/io_thread_group.h"
+#include"../net/eventloop.h"
+#include"../net/io_thread_group.h"
 
 namespace rocket{
 

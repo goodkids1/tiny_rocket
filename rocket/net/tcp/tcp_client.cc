@@ -3,8 +3,8 @@
 #include<unistd.h>
 #include<string.h>
 #include<memory>
-#include"/home/zxl/rocket/rocket/common/log.h"
-#include"/home/zxl/rocket/rocket/net/fd_event_group.h"
+#include"../common/log.h"
+#include"../net/fd_event_group.h"
 
 namespace rocket
 {

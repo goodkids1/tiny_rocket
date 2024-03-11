@@ -1,6 +1,6 @@
 #include"./net_addr.h"
 #include<string.h>
-#include"/home/zxl/rocket/rocket/common/log.h"
+#include"../common/log.h"
 
 namespace rocket{
      IPNetAddr::IPNetAddr(const std::string& ip,uint16_t port):m_ip(ip),m_port(port)

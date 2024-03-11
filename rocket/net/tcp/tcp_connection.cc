@@ -1,8 +1,8 @@
 #include"./tcp_connection.h"
-#include"/home/zxl/rocket/rocket/common/log.h"
-#include"/home/zxl/rocket/rocket/net/fd_event_group.h"
+#include"../common/log.h"
+#include"../net/fd_event_group.h"
 #include<unistd.h>
-#include"/home/zxl/rocket/rocket/net/coder/tinypb_coder.h"
+#include"../net/coder/tinypb_coder.h"
 
 namespace rocket{
 
@@ -83,7 +83,7 @@ namespace rocket{
             //将响应message放入到发送缓冲区，监听可写事件回包
             INFOLOG("success get request[%s] from client[%s]",result[i]->m_req_id.c_str(),m_peer_addr->toString().c_str());
             std::shared_ptr<TinyPBProtocol> message = std::make_shared<TinyPBProtocol>();
-            message->m_pb_data = "hello,this is rocket roc test data";
+            message->m_pb_data = "hello,this is rocket rpc test data";
             message->m_req_id = result[i]->m_req_id;
             replay_message.emplace_back(message);
         }
