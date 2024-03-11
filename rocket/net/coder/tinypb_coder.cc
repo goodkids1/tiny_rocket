@@ -151,7 +151,7 @@ if(parse_success){
     char method_name[512] = {0};
     memcpy(&method_name[0],&tmp[method_name_index],message->m_method_name_len);
     message->m_method_name = std::string(method_name);
-    DEBUGLOG("parse req_id = %s",message->m_method_name.c_str());
+    DEBUGLOG("parse method_name = %s",message->m_method_name.c_str());
     
     int err_code_index = method_name_index + message->m_method_name_len;
     if(err_code_index>=end_index){
@@ -171,11 +171,12 @@ if(parse_success){
     char err_info[512] = {0};
     memcpy(&err_info[0],&tmp[err_info_index],message->m_err_info_len);
     message->m_err_info = std::string(err_info);
-    DEBUGLOG("parse req_id = %s",message->m_err_info.c_str());
+    DEBUGLOG("parse err_info = %s",message->m_err_info.c_str());
 
     int pb_data_len = message->m_pk_len-message->m_method_name_len-message->m_req_Id_len-message->m_err_info_len-2-24;
     int pb_data_index = err_info_index+message->m_err_info_len;
     message->m_pb_data = std::string(&tmp[pb_data_index],pb_data_len);
+    DEBUGLOG("parse pb_data = %s",message->m_pb_data.c_str());
 
     //这里校验和去解析
 
