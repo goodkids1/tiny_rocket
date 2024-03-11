@@ -1,6 +1,6 @@
 #include"./timer_event.h"
-#include "/home/zxl/rocket/rocket/common/log.h"
-#include "/home/zxl/rocket/rocket/common/util.h"
+#include "../common/log.h"
+#include "../common/util.h"
 
 namespace rocket{
     TimerEvent::TimerEvent(int interval,bool is_repeated,std::function<void()> cb)

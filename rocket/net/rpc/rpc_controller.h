@@ -5,7 +5,7 @@
 #include <google/protobuf/stubs/callback.h>
 #include <stdio.h>
 #include <memory>
-#include "/home/zxl/rocket/rocket/net/tcp/net_addr.h"
+#include "../tcp/net_addr.h"
 
 namespace rocket{
 
@@ -74,13 +74,13 @@ class RpcController : public google::protobuf::RpcController {
  private:
   int m_error_code {0};           // error_code, identify one specific error
   std::string m_error_info;       // error_info, details description of error
-  std::string m_msg_req;          // msg_req, identify once rpc request and response
+  std::string m_req_id;          // msg_req, identify once rpc request and response
   bool m_is_failed {false}; 
   bool m_is_cancled {false};
   NetAddr::s_ptr m_peer_addr;
   NetAddr::s_ptr m_local_addr;
 
-  int m_timeout {5000};           // max call rpc timeout
+  int m_timeout {5000};           // max call rpc timeout 单位ms
   std::string m_method_name;      // method name
   std::string m_full_name;        // full name, like server.method_name
 

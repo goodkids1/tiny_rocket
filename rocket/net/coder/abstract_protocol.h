@@ -2,7 +2,7 @@
 #define ROCKET_NET_ABSTRACT_PROTOCOL_H
 
 #include<memory>
-#include"/home/zxl/rocket/rocket/net/tcp/tcp_buffer.h"
+#include"../tcp/tcp_buffer.h"
 
 namespace rocket{
 

@@ -1,7 +1,7 @@
 #include"./fd_event.h"
 #include<fcntl.h>
 #include<string.h>
-#include "/home/zxl/rocket/rocket/common/log.h"
+#include "../common/log.h"
 
 namespace rocket
 {

@@ -2,6 +2,7 @@
 #define ROCKET_NET_RPC_RPC_DISPATCHER_H
 
 #include"/home/zxl/rocket/rocket/net/coder/abstract_protocol.h"
+#include"/home/zxl/rocket/rocket/net/coder/tinypb_protocol.h"
 #include<map>
 #include<memory>
 #include<google/protobuf/service.h>

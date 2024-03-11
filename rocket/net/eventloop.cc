@@ -1,6 +1,6 @@
 #include"./eventloop.h"
-#include "/home/zxl/rocket/rocket/common/log.h"
-#include "/home/zxl/rocket/rocket/common/util.h"
+#include "../common/log.h"
+#include "../common/util.h"
 #include<sys/epoll.h>
 #include<sys/socket.h>
 #include<sys/eventfd.h>

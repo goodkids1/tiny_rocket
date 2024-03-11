@@ -1,7 +1,7 @@
 #include"./io_thread.h"
 #include<assert.h>
-#include "/home/zxl/rocket/rocket/common/log.h"
-#include "/home/zxl/rocket/rocket/common/util.h"
+#include "../common/log.h"
+#include "../common/util.h"
 #include<pthread.h>
 
 namespace rocket{

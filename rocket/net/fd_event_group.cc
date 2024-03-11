@@ -1,6 +1,6 @@
 #include"./fd_event_group.h"
-#include"/home/zxl/rocket/rocket/common/mutex.h"
-#include"/home/zxl/rocket/rocket/common/log.h"
+#include"../common/mutex.h"
+#include"../common/log.h"
 
 namespace rocket{
     static FdEventGroup* g_fd_event_group = NULL;

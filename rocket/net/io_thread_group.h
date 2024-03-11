@@ -3,7 +3,7 @@
 
 #include<vector>
 #include"./io_thread.h"
-#include"/home/zxl/rocket/rocket/common/log.h"
+#include"../common/log.h"
 
 namespace rocket
 {

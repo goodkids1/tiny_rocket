@@ -1,7 +1,7 @@
 #include"./tinypb_coder.h"
 #include"./tinypb_protocol.h"
-#include"/home/zxl/rocket/rocket/common/util.h"
-#include"/home/zxl/rocket/rocket/common/log.h"
+#include"../../common/util.h"
+#include"../../common/log.h"
 #include<vector>
 #include<arpa/inet.h>
 #include<string.h>
